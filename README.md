@@ -67,12 +67,12 @@ Contoh body untuk POST dan PUT:
 
 ```json
 {
-  "nama_anak": "Aisyah Putri Ramadhani",
-  "jenis_kelamin": "P",
+  "nama_anak": "Dhaniel Dhaneswara",
+  "jenis_kelamin": "L",
   "tempat_lahir": "Surabaya",
-  "tanggal_lahir": "2024-03-15",
-  "nama_ayah": "Budi Santoso",
-  "nama_ibu": "Siti Aminah"
+  "tanggal_lahir": "2007-03-15",
+  "nama_ayah": "Pedrosa",
+  "nama_ibu": "Aminah"
 }
 ```
 
@@ -85,7 +85,7 @@ Kalau id akta tidak ada, API mengembalikan status `404`.
 # catat akta baru
 curl -X POST http://localhost:8080/api/akta \
   -H "Content-Type: application/json" \
-  -d '{"nama_anak":"Aisyah Putri Ramadhani","jenis_kelamin":"P","tempat_lahir":"Surabaya","tanggal_lahir":"2024-03-15","nama_ayah":"Budi Santoso","nama_ibu":"Siti Aminah"}'
+  -d '{"nama_anak":"Dhaniel Dhaneswar","jenis_kelamin":"L","tempat_lahir":"Surabaya","tanggal_lahir":"2007-03-15","nama_ayah":"Pedrosa","nama_ibu":"Aminah"}'
 
 # lihat semua akta
 curl http://localhost:8080/api/akta
