@@ -97,6 +97,30 @@ curl "http://localhost:8080/api/akta?tahun=2024"
 curl -X DELETE http://localhost:8080/api/akta/1
 ```
 
+## Hasil Pengerjaan
+
+Pengujian endpoint dilakukan menggunakan Postman dengan server berjalan di `localhost:8080`.
+
+**GET /ping** untuk cek server berjalan
+
+![GET ping](screenshots/get_ping.png)
+
+**POST /api/akta** untuk mencatat akta baru (201 Created, nomor akta dibuat otomatis)
+
+![POST akta](screenshots/post_input_data.png)
+
+**PUT /api/akta/:id** untuk mengubah data akta
+
+![PUT akta](screenshots/put_edit_data.png)
+
+**DELETE /api/akta/:id** untuk menghapus data akta
+
+![DELETE akta](screenshots/delete_deletedata.png)
+
+**Log server** yang mencatat setiap request beserta status code-nya
+
+![Log server](screenshots/monitor.png)
+
 ---
 
 ## Dasar Version Control System (Git)
@@ -105,7 +129,7 @@ curl -X DELETE http://localhost:8080/api/akta/1
 
 Version Control System (VCS) adalah sistem yang mencatat setiap perubahan pada file dalam sebuah
 project. Dengan VCS kita bisa melihat riwayat perubahan, kembali ke versi sebelumnya kalau ada
-yang rusak, dan bekerja bareng orang lain tanpa saling menimpa pekerjaan.
+yang rusak, dan bekerja bareng orang lain dengan independen.
 
 Git adalah VCS yang paling banyak dipakai. Git bersifat *distributed*, artinya setiap orang
 menyimpan salinan lengkap repository beserta riwayatnya di komputer masing-masing. GitHub adalah
